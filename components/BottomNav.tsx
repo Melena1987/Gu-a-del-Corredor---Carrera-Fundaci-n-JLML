@@ -14,18 +14,29 @@ const BottomNav: React.FC = () => {
     return (
         <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-white/80 backdrop-blur-sm border-t border-gray-200 shadow-[0_-1px_10px_rgba(0,0,0,0.05)] z-40">
             <ul className="flex justify-around items-center h-16">
-                {navLinks.map((link) => (
-                    <li key={link.href} className="flex-1">
-                        <a 
-                            href={link.href} 
-                            className="flex flex-col items-center justify-center text-center text-gray-600 hover:text-blue-600 transition-colors w-full h-full"
-                            aria-label={link.text}
-                        >
-                            {link.icon}
-                            <span className="text-xs font-medium">{link.text}</span>
-                        </a>
-                    </li>
-                ))}
+                {navLinks.map((link) => {
+                    const isDorsal = link.text === 'Dorsal';
+                    return (
+                        <li key={link.href} className="flex-1 h-full flex items-center justify-center p-1">
+                            <a 
+                                href={link.href} 
+                                className={`
+                                    flex flex-col items-center justify-center text-center w-full h-full rounded-lg transition-all duration-300
+                                    ${isDorsal
+                                        ? 'bg-blue-600 text-white shadow-lg'
+                                        : 'text-gray-600 hover:text-blue-600'
+                                    }
+                                `}
+                                aria-label={link.text}
+                            >
+                                {link.icon}
+                                <span className={`text-xs ${isDorsal ? 'font-bold' : 'font-medium'}`}>
+                                    {link.text}
+                                </span>
+                            </a>
+                        </li>
+                    );
+                })}
             </ul>
         </nav>
     );
