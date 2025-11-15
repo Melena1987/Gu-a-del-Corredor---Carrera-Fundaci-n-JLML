@@ -119,22 +119,26 @@ const Header: React.FC = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
           
-          <div className="flex flex-col items-center lg:col-span-2 text-center">
-             <img 
-              src="https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763196923876_logo_carrera_400x400.png?alt=media&token=c50ce165-3dfc-475f-a931-57b2e8f5ce7c" 
-              alt="Logo Carrera Fundación JLML"
-              className="mx-auto h-72 w-72 object-contain animate-fade-in-up"
-            />
-            <h2 className="text-xl md:text-2xl font-semibold tracking-widest text-gray-500 uppercase animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-              22 y 23 · Noviembre · 2025
-            </h2>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase my-4 tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500 animate-gradient-x animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-              Linares
-            </h1>
-            <p className="text-2xl md:text-4xl font-bold tracking-wide animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+          <div className="flex flex-col items-center justify-center lg:col-span-2 text-center min-h-[450px]">
+            {/* 1. Guía del Corredor */}
+            <p className="text-2xl md:text-4xl font-bold tracking-wide animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
               Guía del Corredor
             </p>
-            <p className="mt-4 text-lg md:text-xl text-gray-600 animate-fade-in-up" style={{ animationDelay: '0.7s' }}>I Carrera Fundación José Luis Martín López</p>
+            
+            {/* 2. LINARES */}
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase my-3 tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500 animate-gradient-x animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+              Linares
+            </h1>
+
+            {/* 3. I Carrera... */}
+            <p className="text-lg md:text-xl text-gray-600 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+              I Carrera Fundación José Luis Martín López
+            </p>
+
+            {/* 4. Date */}
+            <h2 className="mt-8 text-xl md:text-2xl font-semibold tracking-widest text-gray-500 uppercase animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
+              22 y 23 · Noviembre · 2025
+            </h2>
           </div>
           
           <div className="flex flex-col items-center justify-center p-6 bg-white/60 backdrop-blur-sm rounded-xl shadow-lg border border-gray-200/50 animate-scale-in" style={{ animationDelay: '0.8s' }}>
