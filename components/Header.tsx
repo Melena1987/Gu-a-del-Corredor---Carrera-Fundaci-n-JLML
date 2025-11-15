@@ -82,14 +82,14 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <header className="relative bg-gray-100 text-gray-800 py-4 md:py-6 overflow-hidden">
+    <header className="relative bg-gray-100 text-gray-800 pt-4 pb-8 md:py-6 overflow-hidden">
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-75 bg-fixed" 
         style={{ 
           backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763225153741_martin_fiz_carrera_linares_2.jpeg?alt=media&token=8a23d0be-2b65-4d9c-a8e6-12172dce911e')",
         }}>
       </div>
-      <div className="absolute inset-0 bg-gradient-to-t from-gray-50/90 via-gray-50/60 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-gray-50/95 via-gray-50/80 to-white/50"></div>
       
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -117,13 +117,13 @@ const Header: React.FC = () => {
           </a>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 items-center">
           
-          <div className="flex flex-col items-center justify-center lg:col-span-2 text-center min-h-[450px]">
+          <div className="flex flex-col items-center justify-center lg:col-span-2 text-center min-h-[380px] md:min-h-[450px]">
             <img 
               src="https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763203728184_Carrera_Fundaci_n_JLML_Linares_400x400.png?alt=media&token=0068077d-4b37-4189-96a1-94be18e7d8cf" 
               alt="Logo Carrera Fundación JLML"
-              className="h-28 w-auto mb-4 animate-fade-in-up"
+              className="h-24 md:h-28 w-auto mb-3 animate-fade-in-up"
               style={{ animationDelay: '0s' }}
             />
             
@@ -133,7 +133,7 @@ const Header: React.FC = () => {
             </p>
             
             {/* 2. LINARES */}
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase my-3 tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500 animate-gradient-x animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase my-2 tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500 animate-gradient-x animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
               Linares
             </h1>
 
@@ -143,7 +143,7 @@ const Header: React.FC = () => {
             </p>
 
             {/* 4. Date */}
-            <h2 className="mt-8 text-xl md:text-2xl font-semibold tracking-widest text-gray-500 uppercase animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
+            <h2 className="mt-6 text-xl md:text-2xl font-semibold tracking-widest text-gray-500 uppercase animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
               22 y 23 · Noviembre · 2025
             </h2>
           </div>
