@@ -42,14 +42,14 @@ const CultureSection: React.FC = () => {
   return (
     <Section 
       id="turismo"
-      title="Museos y Centros de Interpretación"
+      title="Turismo por Linares"
       parallaxBgImage="https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763198129907_linares_carrera_fundaci_n_JLML.jpg?alt=media&token=b3f1d9od5-be17-4054-a754-f399636d5384"
     >
         <div className="text-center mb-12">
-            <p className="text-lg text-white bg-black/50 inline-block p-3 rounded-lg font-semibold">
+            <p className="text-lg text-white bg-red-600 inline-block p-4 rounded-lg font-bold shadow-lg transform hover:scale-105 transition-transform duration-300">
             ¡ACCESO GRATUITO a todos los museos de la ciudad el domingo 23!
             </p>
-            <p className="mt-4 max-w-3xl mx-auto text-white font-bold">
+            <p className="mt-4 max-w-3xl mx-auto text-white font-bold bg-black/50 p-2 rounded-md">
                 La Delegación de Turismo de Linares ofrece un plan de recuperación inmejorable después de cruzar la meta. Presenta tu dorsal y disfruta del patrimonio de la ciudad.
             </p>
         </div>

@@ -22,7 +22,6 @@ const ScheduleSection: React.FC = () => {
     { time: '10:45h', title: 'Entrega de premios', description: 'Categorías Escolar e Infantil', location: 'Paseo de Linarejos', locationUrl: paseoUrl },
     { time: '11:00h', title: 'Salida Carrera Popular', description: 'Modalidades 5k y 10k', location: 'Paseo de Linarejos', locationUrl: paseoUrl },
     { time: '12:00h', title: 'Entrega de premios', description: 'Categoría Popular', location: 'Paseo de Linarejos', locationUrl: paseoUrl },
-    { time: '14:00h', title: 'Fin del evento' },
   ];
   
   return (

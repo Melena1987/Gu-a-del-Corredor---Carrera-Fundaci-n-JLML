@@ -1,8 +1,78 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Countdown from './Countdown';
+import { LocationMarkerIcon } from './Icons';
+
+// Define the event type
+interface CountdownEvent {
+  date: string;
+  title: string;
+  description?: string;
+  location?: string;
+  locationUrl?: string;
+}
+
+// Define the events in chronological order
+const countdownEvents: CountdownEvent[] = [
+  {
+    date: "2025-11-22T17:00:00",
+    title: "Recogida de dorsales",
+    description: "Inicio del periodo de recogida",
+    location: "Pistas de San José",
+    locationUrl: "https://maps.app.goo.gl/Zt69AzqNX9nNsMwj6",
+  },
+  {
+    date: "2025-11-22T18:00:00",
+    title: "Charla con las Leyendas",
+    description: "Con Fermín Cacho, Martín Fiz y más",
+    location: "Pistas de San José",
+    locationUrl: "https://maps.app.goo.gl/Zt69AzqNX9nNsMwj6",
+  },
+  {
+    date: "2025-11-23T10:00:00",
+    title: "Salida Carreras Menores",
+    description: "Categorías Escolar e Infantil",
+    location: "Paseo de Linarejos",
+    locationUrl: "https://maps.app.goo.gl/6xj6pqpPzH5BN5KX9",
+  },
+  {
+    date: "2025-11-23T10:15:00",
+    title: "Fin de recogida de dorsales",
+    description: "Última oportunidad",
+    location: "Pistas de San José",
+    locationUrl: "https://maps.app.goo.gl/Zt69AzqNX9nNsMwj6",
+  },
+  {
+    date: "2025-11-23T11:00:00",
+    title: "Salida Carrera Popular",
+    description: "Modalidades 5k y 10k",
+    location: "Paseo de Linarejos",
+    locationUrl: "https://maps.app.goo.gl/6xj6pqpPzH5BN5KX9",
+  },
+  {
+    date: "2025-11-23T12:00:00",
+    title: "Entrega de premios",
+    description: "Categoría Popular",
+    location: "Paseo de Linarejos",
+    locationUrl: "https://maps.app.goo.gl/6xj6pqpPzH5BN5KX9",
+  },
+];
+
 
 const Header: React.FC = () => {
-  const targetDate = "2025-11-22T17:00:00";
+  const [nextEvent, setNextEvent] = useState<CountdownEvent | null>(null);
+  
+  useEffect(() => {
+    const findNextEvent = () => {
+      const now = new Date();
+      const upcomingEvent = countdownEvents.find(event => new Date(event.date) > now);
+      setNextEvent(upcomingEvent || null);
+    };
+
+    findNextEvent();
+    const interval = setInterval(findNextEvent, 1000); 
+
+    return () => clearInterval(interval);
+  }, []);
 
   const navLinks = [
     { href: '#info-esencial', text: 'Info Esencial' },
@@ -62,8 +132,32 @@ const Header: React.FC = () => {
           </div>
           
           <div className="flex flex-col items-center justify-center p-6 bg-white/60 backdrop-blur-sm rounded-xl shadow-lg border border-gray-200/50">
-            <h3 className="text-xl font-bold text-gray-700 mb-4 uppercase tracking-wider">Comienza en</h3>
-            <Countdown targetDate={targetDate} />
+            <h3 className="text-xl font-bold text-gray-700 mb-4 uppercase tracking-wider">
+                {nextEvent ? 'Próximo evento' : 'Evento finalizado'}
+            </h3>
+            {nextEvent ? (
+              <div className="w-full text-center">
+                <Countdown targetDate={nextEvent.date} />
+                <div className="mt-6 w-full border-t border-gray-300 pt-4">
+                  <h4 className="text-lg font-bold text-gray-900">{nextEvent.title}</h4>
+                  {nextEvent.description && <p className="text-base font-normal text-gray-600 mt-1">{nextEvent.description}</p>}
+                  {nextEvent.location && (
+                    <div className="flex items-center justify-center gap-1 mt-2 text-sm text-red-600 font-medium">
+                        <LocationMarkerIcon className="w-4 h-4"/>
+                        {nextEvent.locationUrl ? (
+                          <a href={nextEvent.locationUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                            {nextEvent.location}
+                          </a>
+                        ) : (
+                          <span>{nextEvent.location}</span>
+                        )}
+                    </div>
+                  )}
+                </div>
+              </div>
+            ) : (
+              <p className="text-center text-xl font-bold text-blue-600">¡Gracias por participar!</p>
+            )}
           </div>
 
         </div>

@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         <p className="text-2xl font-bold text-gray-900 mb-2">
           ¡Mucha suerte en la carrera y disfruta de Linares!
         </p>
-        <p>&copy; 2025 Carrera Fundación José Luis Martín López. Todos los derechos reservados.</p>
+        <p className="italic">Donde las leyendas inspiran y la ciudad hace historia.</p>
       </div>
     </footer>
   );
