@@ -89,7 +89,7 @@ const Header: React.FC = () => {
           backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763198250981_Jesus_Espa_a_carrera_Linares.jpg?alt=media&token=eccc976a-686e-42c8-b0be-8c3d3ab16b23')",
         }}>
       </div>
-      <div className="absolute inset-0 bg-gradient-to-t from-gray-50/80 via-gray-50/50 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-gray-50/90 via-gray-50/60 to-transparent"></div>
       
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
         
