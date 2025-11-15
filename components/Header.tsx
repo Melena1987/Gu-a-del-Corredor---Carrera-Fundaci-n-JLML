@@ -94,21 +94,27 @@ const Header: React.FC = () => {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Navigation - Hidden on mobile */}
-        <div className="hidden md:flex justify-end mb-4">
+        <div className="hidden md:flex justify-end items-center space-x-3 mb-4">
           <nav className="bg-white/60 backdrop-blur-sm p-1 rounded-full shadow-sm">
               <ul className="flex items-center space-x-1 sm:space-x-2">
                   {navLinks.map((link) => (
-                  <li key={link.href}>
-                      <a 
-                      href={link.href} 
-                      className="text-xs sm:text-sm font-medium text-gray-800 hover:text-blue-600 transition-colors duration-300 px-3 py-2 rounded-full hover:bg-white/50"
-                      >
-                      {link.text}
-                      </a>
-                  </li>
+                      <li key={link.href}>
+                          <a 
+                            href={link.href} 
+                            className="text-gray-800 hover:text-blue-600 hover:bg-white/50 text-xs sm:text-sm font-medium transition-colors duration-300 px-3 py-2 rounded-full"
+                          >
+                            {link.text}
+                          </a>
+                      </li>
                   ))}
               </ul>
           </nav>
+          <a 
+            href="#dorsal"
+            className="bg-blue-600 text-white hover:bg-blue-700 text-xs sm:text-sm font-medium transition-colors duration-300 px-4 py-2 rounded-full shadow-sm"
+          >
+            Dorsal
+          </a>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
@@ -158,6 +164,9 @@ const Header: React.FC = () => {
             ) : (
               <p className="text-center text-xl font-bold text-blue-600">¡Gracias por participar!</p>
             )}
+            <a href="#dorsal" className="mt-6 block w-full text-center bg-blue-600 text-white font-bold text-lg px-8 py-3 rounded-full shadow-lg hover:bg-blue-700 transition-transform transform hover:scale-105">
+              Encuentra tu Dorsal
+            </a>
           </div>
 
         </div>

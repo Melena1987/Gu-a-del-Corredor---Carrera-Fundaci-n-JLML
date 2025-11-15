@@ -24,6 +24,9 @@ const LogisticsSection: React.FC = () => {
             <li>Sábado 22: 17:00h a 20:00h</li>
             <li>Domingo 23: 08:00h a 10:15h</li>
           </ul>
+           <a href="#dorsal" className="mt-4 block text-center bg-blue-100 text-blue-800 font-semibold py-2 px-4 rounded-lg hover:bg-blue-200 transition-colors duration-300">
+            ¿Sabes ya cuál es tu número? ¡Encuéntralo aquí!
+          </a>
           <p className="mt-4 text-sm text-blue-600 font-medium">No olvides tu DNI/NIE. Para recoger el de otra persona, trae autorización firmada y fotocopia de su DNI.</p>
         </InfoCard>
         <InfoCard icon={<CheckroomIcon />} title="Servicio de Guardarropa">

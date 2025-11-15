@@ -1,11 +1,12 @@
 import React from 'react';
-import { InformationCircleIcon, CalendarIcon, MapIcon, BuildingLibraryIcon } from './Icons';
+import { InformationCircleIcon, CalendarIcon, MapIcon, BuildingLibraryIcon, SearchIcon } from './Icons';
 
 const BottomNav: React.FC = () => {
     
     const navLinks = [
         { href: '#info-esencial', text: 'Info', icon: <InformationCircleIcon className="w-6 h-6 mb-1"/> },
         { href: '#programa', text: 'Programa', icon: <CalendarIcon className="w-6 h-6 mb-1"/> },
+        { href: '#dorsal', text: 'Dorsal', icon: <SearchIcon className="w-6 h-6 mb-1" /> },
         { href: '#recorridos', text: 'Recorridos', icon: <MapIcon className="w-6 h-6 mb-1"/> },
         { href: '#turismo', text: 'Turismo', icon: <BuildingLibraryIcon className="w-6 h-6 mb-1" /> },
     ];
