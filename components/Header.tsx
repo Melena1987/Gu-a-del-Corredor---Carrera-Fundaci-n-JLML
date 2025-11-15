@@ -143,12 +143,12 @@ const Header: React.FC = () => {
             </p>
 
             {/* 4. Date */}
-            <h2 className="mt-6 text-xl md:text-2xl font-semibold tracking-widest text-gray-500 uppercase animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
+            <h2 className="mt-1 text-xl md:text-2xl font-semibold tracking-widest text-gray-500 uppercase animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
               22 y 23 · Noviembre · 2025
             </h2>
           </div>
           
-          <div className="flex flex-col items-center justify-center p-6 bg-white/60 backdrop-blur-sm rounded-xl shadow-lg border border-gray-200/50 animate-scale-in" style={{ animationDelay: '0.8s' }}>
+          <div className="flex flex-col items-center justify-center p-6 bg-white/50 backdrop-blur-sm rounded-xl shadow-lg border border-gray-200/40 animate-scale-in" style={{ animationDelay: '0.8s' }}>
             <h3 className="text-xl font-bold text-gray-700 mb-4 uppercase tracking-wider">
                 {nextEvent ? 'Próximo evento' : 'Evento finalizado'}
             </h3>
