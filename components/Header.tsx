@@ -41,9 +41,9 @@ const Header: React.FC = () => {
           </nav>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
           
-          <div className="text-center lg:text-left">
+          <div className="text-center lg:text-left lg:col-span-2">
              <img 
               src="https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763196923876_logo_carrera_400x400.png?alt=media&token=c50ce165-3dfc-475f-a931-57b2e8f5ce7c" 
               alt="Logo Carrera Fundación JLML"
@@ -62,7 +62,7 @@ const Header: React.FC = () => {
           </div>
           
           <div className="flex flex-col items-center justify-center p-6 bg-white/60 backdrop-blur-sm rounded-xl shadow-lg border border-gray-200/50">
-            <h3 className="text-2xl font-bold text-gray-700 mb-6 uppercase tracking-wider">Comienza en</h3>
+            <h3 className="text-xl font-bold text-gray-700 mb-4 uppercase tracking-wider">Comienza en</h3>
             <Countdown targetDate={targetDate} />
           </div>
 

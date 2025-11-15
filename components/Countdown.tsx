@@ -36,7 +36,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
 
   const TimeValue: React.FC<{ value: number; label: string }> = ({ value, label }) => (
     <div className="flex flex-col items-center">
-      <span className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 tabular-nums">{formatNumber(value)}</span>
+      <span className="text-4xl sm:text-5xl font-bold text-gray-800 tabular-nums">{formatNumber(value)}</span>
       <span className="block text-xs sm:text-sm uppercase tracking-wider text-gray-500 mt-1">{label}</span>
     </div>
   );
