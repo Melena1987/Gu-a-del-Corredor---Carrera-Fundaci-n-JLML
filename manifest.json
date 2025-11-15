@@ -1,0 +1,23 @@
+{
+  "name": "Guía del Corredor: I Carrera Fundación JLML 2025",
+  "short_name": "Guía Carrera",
+  "description": "Toda la información para la I Carrera Fundación JLML en Linares: horarios, logística, recorridos y atracciones locales. ¡Prepárate para la carrera!",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f9fafb",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763196923876_logo_carrera_400x400.png?alt=media&token=c50ce165-3dfc-475f-a931-57b2e8f5ce7c",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763196923876_logo_carrera_400x400.png?alt=media&token=c50ce165-3dfc-475f-a931-57b2e8f5ce7c",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
