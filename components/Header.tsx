@@ -123,21 +123,21 @@ const Header: React.FC = () => {
              <img 
               src="https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763196923876_logo_carrera_400x400.png?alt=media&token=c50ce165-3dfc-475f-a931-57b2e8f5ce7c" 
               alt="Logo Carrera Fundación JLML"
-              className="mx-auto h-72 w-72 object-contain"
+              className="mx-auto h-72 w-72 object-contain animate-fade-in-up"
             />
-            <h2 className="text-xl md:text-2xl font-semibold tracking-widest text-gray-500 uppercase">
+            <h2 className="text-xl md:text-2xl font-semibold tracking-widest text-gray-500 uppercase animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
               22 y 23 · Noviembre · 2025
             </h2>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase my-4 tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500 animate-gradient-x">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase my-4 tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500 animate-gradient-x animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
               Linares
             </h1>
-            <p className="text-2xl md:text-4xl font-bold tracking-wide">
+            <p className="text-2xl md:text-4xl font-bold tracking-wide animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
               Guía del Corredor
             </p>
-            <p className="mt-4 text-lg md:text-xl text-gray-600">I Carrera Fundación José Luis Martín López</p>
+            <p className="mt-4 text-lg md:text-xl text-gray-600 animate-fade-in-up" style={{ animationDelay: '0.7s' }}>I Carrera Fundación José Luis Martín López</p>
           </div>
           
-          <div className="flex flex-col items-center justify-center p-6 bg-white/60 backdrop-blur-sm rounded-xl shadow-lg border border-gray-200/50">
+          <div className="flex flex-col items-center justify-center p-6 bg-white/60 backdrop-blur-sm rounded-xl shadow-lg border border-gray-200/50 animate-scale-in" style={{ animationDelay: '0.8s' }}>
             <h3 className="text-xl font-bold text-gray-700 mb-4 uppercase tracking-wider">
                 {nextEvent ? 'Próximo evento' : 'Evento finalizado'}
             </h3>
@@ -171,7 +171,6 @@ const Header: React.FC = () => {
 
         </div>
       </div>
-       {/* fix: Removed 'jsx' prop from style tag to fix TypeScript error. This now uses a standard style tag for component-scoped CSS. */}
        <style>{`
         @keyframes gradient-x {
           0%, 100% {
@@ -185,6 +184,22 @@ const Header: React.FC = () => {
         }
         .animate-gradient-x {
           animation: gradient-x 5s ease infinite;
+        }
+        @keyframes fadeInUp {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+          animation: fadeInUp 0.8s ease-out forwards;
+          opacity: 0;
+        }
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .animate-scale-in {
+            animation: scaleIn 0.8s ease-out forwards;
+            opacity: 0;
         }
       `}</style>
     </header>

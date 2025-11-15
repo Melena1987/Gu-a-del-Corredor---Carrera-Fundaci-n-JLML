@@ -1,6 +1,7 @@
 import React from 'react';
 import Section from '../Section';
 import MuseumCard from '../MuseumCard';
+import AnimateOnScroll from '../AnimateOnScroll';
 
 const museums = [
   {
@@ -45,21 +46,24 @@ const CultureSection: React.FC = () => {
       title="Turismo por Linares"
       parallaxBgImage="https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763198129907_linares_carrera_fundaci_n_JLML.jpg?alt=media&token=b3f1d9od5-be17-4054-a754-f399636d5384"
     >
-        <div className="text-center mb-12">
-            <p className="text-lg text-white bg-red-600 inline-block p-4 rounded-lg font-bold shadow-lg transform hover:scale-105 transition-transform duration-300">
-            ¡ACCESO GRATUITO a todos los museos de la ciudad el domingo 23!
-            </p>
-            <p className="mt-4 max-w-3xl mx-auto text-white font-bold bg-black/50 p-2 rounded-md">
-                La Delegación de Turismo de Linares ofrece un plan de recuperación inmejorable después de cruzar la meta. Presenta tu dorsal y disfruta del patrimonio de la ciudad.
-            </p>
-        </div>
+        <AnimateOnScroll animationClass="fade-in-up">
+            <div className="text-center mb-12">
+                <p className="text-lg text-white bg-red-600 inline-block p-4 rounded-lg font-bold shadow-lg transform hover:scale-105 transition-transform duration-300">
+                ¡ACCESO GRATUITO a todos los museos de la ciudad el domingo 23!
+                </p>
+                <p className="mt-4 max-w-3xl mx-auto text-white font-bold bg-black/50 p-2 rounded-md">
+                    La Delegación de Turismo de Linares ofrece un plan de recuperación inmejorable después de cruzar la meta. Presenta tu dorsal y disfruta del patrimonio de la ciudad.
+                </p>
+            </div>
+        </AnimateOnScroll>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12 max-w-6xl mx-auto">
-            {museums.map((museum) => (
-            <MuseumCard
-                key={museum.title}
-                title={museum.title}
-                description={museum.description}
-            />
+            {museums.map((museum, index) => (
+             <AnimateOnScroll key={museum.title} animationClass="scale-in" delay={(index % 2) * 150}>
+                <MuseumCard
+                    title={museum.title}
+                    description={museum.description}
+                />
+            </AnimateOnScroll>
             ))}
         </div>
         <div className="text-center mt-12">

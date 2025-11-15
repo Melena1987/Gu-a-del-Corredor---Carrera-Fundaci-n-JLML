@@ -1,5 +1,6 @@
 
 import React from 'react';
+import AnimateOnScroll from './AnimateOnScroll';
 
 interface SectionProps {
   id?: string;
@@ -30,9 +31,11 @@ const Section: React.FC<SectionProps> = ({ id, title, children, parallaxBgImage 
         </>
       )}
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className={`text-3xl md:text-4xl font-bold text-center mb-10 md:mb-12 ${parallaxBgImage ? 'text-white' : ''}`}>
-          {title}
-        </h2>
+        <AnimateOnScroll animationClass="fade-in-up">
+          <h2 className={`text-3xl md:text-4xl font-bold text-center mb-10 md:mb-12 ${parallaxBgImage ? 'text-white' : ''}`}>
+            {title}
+          </h2>
+        </AnimateOnScroll>
         {children}
       </div>
     </section>

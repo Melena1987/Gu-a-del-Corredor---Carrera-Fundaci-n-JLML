@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import Section from '../Section';
 import { SearchIcon } from '../Icons';
+import AnimateOnScroll from '../AnimateOnScroll';
 
 // Dummy data until the real list is provided
 const runners = [
@@ -36,22 +37,26 @@ const FindBibSection: React.FC = () => {
       parallaxBgImage="https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763222472228_martin_fiz_carrera_linares.jpeg?alt=media&token=978de1cf-a7ce-4050-8ef1-41844dd90b09"
     >
       <div className="max-w-2xl mx-auto text-center">
-        <p className="text-lg text-white mb-8 bg-black/40 backdrop-blur-sm p-4 rounded-xl font-medium">
-          Introduce tu nombre o apellidos para localizar tu número de dorsal. La búsqueda se activará al introducir al menos 3 caracteres.
-        </p>
-        <div className="relative">
-          <input
-            type="text"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Ej: Martín Fiz"
-            className="w-full px-5 py-3 text-lg bg-white text-gray-900 placeholder-gray-500 border-2 border-gray-300 rounded-full focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
-            aria-label="Buscar dorsal por nombre"
-          />
-          <div className="absolute top-0 right-0 mt-3 mr-5">
-              <SearchIcon className="w-6 h-6 text-gray-400" />
-          </div>
-        </div>
+        <AnimateOnScroll animationClass="fade-in-up">
+            <p className="text-lg text-white mb-8 bg-black/40 backdrop-blur-sm p-4 rounded-xl font-medium">
+            Introduce tu nombre o apellidos para localizar tu número de dorsal. La búsqueda se activará al introducir al menos 3 caracteres.
+            </p>
+        </AnimateOnScroll>
+        <AnimateOnScroll animationClass="fade-in-up" delay={150}>
+            <div className="relative">
+            <input
+                type="text"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="Ej: Martín Fiz"
+                className="w-full px-5 py-3 text-lg bg-white text-gray-900 placeholder-gray-500 border-2 border-gray-300 rounded-full focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
+                aria-label="Buscar dorsal por nombre"
+            />
+            <div className="absolute top-0 right-0 mt-3 mr-5">
+                <SearchIcon className="w-6 h-6 text-gray-400" />
+            </div>
+            </div>
+        </AnimateOnScroll>
 
         <div className="mt-8 text-left">
           {query.trim().length >= 3 && filteredRunners.length > 0 && (

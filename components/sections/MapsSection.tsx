@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import MapCard from '../MapCard';
 import MapDetailsModal from '../MapDetailsModal';
+import AnimateOnScroll from '../AnimateOnScroll';
 
 const description5k = 'Salida 11:00h desde el Paseo de Linarejos sentido ascendente, Plaza de la Constitución (carril junto a Jardines Santa Margarita), calle Julio Burell, Plaza Colón,calle Viriato, calle Yanguas Messías, calle Cánovas del Castillo, calle Yanguas Jiménez, calle General Echagüe, calle Huarte de San Juan, calle Iglesia, calle Carnecería, Plaza del Ayuntamiento (por el carril junto a escaleras del parking), Avenida de Andalucía sentido hacia el minero, vuelta en la rotonda de Plaza Aníbal e Himilce, Avenida Andalucía sentido Ayuntamiento, Plaza del Ayuntamiento (carril junto a Palacio Consistorial), Plaza Ramón y Cajal, Pasaje del Comercio, Corredera de San Marcos baja, 8 puertas, Corredera San Marcos alta, Plaza de la Constitución (carril junto a Farmacia), subida por el carril de sentido descendente del Paseo de Linarejos, Glorieta de América, Paseo de la Ermita hasta el Club 79, cambio de sentido Paseo de la Ermita hasta Glorieta de América, Bajada por el sentido ascendente del Paseo de Linarejos hasta el cambio de sentido tras la entrada al Parking, entrada por la fuente de la Paloma en la zona central peatonal del Paseo de Linarejos, Llegada a META';
 
@@ -43,16 +44,19 @@ const MapsSection: React.FC = () => {
     <>
       <section id="recorridos" className="bg-white py-12 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 md:mb-12 text-gray-800">
-            Recorridos
-          </h2>
+          <AnimateOnScroll animationClass="fade-in-up">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 md:mb-12 text-gray-800">
+              Recorridos
+            </h2>
+          </AnimateOnScroll>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {mapData.map((map) => (
-              <MapCard 
-                key={map.title} 
-                {...map} 
-                onShowDetails={() => handleShowDetails(map)} 
-              />
+            {mapData.map((map, index) => (
+              <AnimateOnScroll key={map.title} animationClass="scale-in" delay={index * 150}>
+                <MapCard 
+                  {...map} 
+                  onShowDetails={() => handleShowDetails(map)} 
+                />
+              </AnimateOnScroll>
             ))}
           </div>
         </div>

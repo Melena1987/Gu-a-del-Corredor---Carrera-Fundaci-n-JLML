@@ -4,6 +4,7 @@ import Section from '../Section';
 import Timeline from '../Timeline';
 import { CalendarIcon, FinishLineIcon } from '../Icons';
 import type { TimelineEvent } from '../../types';
+import AnimateOnScroll from '../AnimateOnScroll';
 
 const ScheduleSection: React.FC = () => {
   const pistasUrl = 'https://maps.app.goo.gl/Zt69AzqNX9nNsMwj6';
@@ -30,14 +31,18 @@ const ScheduleSection: React.FC = () => {
       title="Programa del Evento"
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-        <div>
-          <h3 className="text-2xl font-bold text-center mb-6 text-red-600 flex items-center justify-center gap-2"><CalendarIcon /> SÁBADO 22: LA PREVIA</h3>
-          <Timeline events={saturdayEvents} />
-        </div>
-        <div>
-          <h3 className="text-2xl font-bold text-center mb-6 text-blue-600 flex items-center justify-center gap-2"><FinishLineIcon /> DOMINGO 23: ¡DÍA DE LA CARRERA!</h3>
-          <Timeline events={sundayEvents} />
-        </div>
+        <AnimateOnScroll animationClass="fade-in-up">
+          <div>
+            <h3 className="text-2xl font-bold text-center mb-6 text-red-600 flex items-center justify-center gap-2"><CalendarIcon /> SÁBADO 22: LA PREVIA</h3>
+            <Timeline events={saturdayEvents} />
+          </div>
+        </AnimateOnScroll>
+        <AnimateOnScroll animationClass="fade-in-up" delay={200}>
+          <div>
+            <h3 className="text-2xl font-bold text-center mb-6 text-blue-600 flex items-center justify-center gap-2"><FinishLineIcon /> DOMINGO 23: ¡DÍA DE LA CARRERA!</h3>
+            <Timeline events={sundayEvents} />
+          </div>
+        </AnimateOnScroll>
       </div>
     </Section>
   );
