@@ -9,6 +9,7 @@ import MapsSection from './components/sections/MapsSection';
 import CultureSection from './components/sections/CultureSection';
 import SponsorsSection from './components/sections/SponsorsSection';
 import BottomNav from './components/BottomNav';
+import InstallPWA from './components/InstallPWA';
 
 const App: React.FC = () => {
   return (
@@ -25,6 +26,7 @@ const App: React.FC = () => {
       </main>
       <Footer />
       <BottomNav />
+      <InstallPWA />
     </div>
   );
 };
