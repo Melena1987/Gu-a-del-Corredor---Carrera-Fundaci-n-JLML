@@ -120,6 +120,13 @@ const Header: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
           
           <div className="flex flex-col items-center justify-center lg:col-span-2 text-center min-h-[450px]">
+            <img 
+              src="https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763203728184_Carrera_Fundaci_n_JLML_Linares_400x400.png?alt=media&token=0068077d-4b37-4189-96a1-94be18e7d8cf" 
+              alt="Logo Carrera Fundación JLML"
+              className="h-28 w-auto mb-4 animate-fade-in-up"
+              style={{ animationDelay: '0s' }}
+            />
+            
             {/* 1. Guía del Corredor */}
             <p className="text-2xl md:text-4xl font-bold tracking-wide animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
               Guía del Corredor
