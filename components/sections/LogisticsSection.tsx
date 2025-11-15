@@ -36,7 +36,7 @@ const LogisticsSection: React.FC = () => {
           <InfoCard icon={<CheckroomIcon />} title="Servicio de Guardarropa">
             <p className="font-semibold text-gray-900">Ubicación:</p>
             <p className="mb-4">
-              <a href="https://maps.app.goo.gl/wJk5c2KjB4gZfDc7A" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
+              <a href="https://maps.app.goo.gl/XarrxT7NmYSUe4PbA" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
                 Junto a Salida/Meta (Estación de Madrid)
               </a>
             </p>

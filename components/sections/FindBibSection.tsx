@@ -34,7 +34,7 @@ const FindBibSection: React.FC = () => {
     <Section
       id="dorsal"
       title="Encuentra tu Dorsal"
-      parallaxBgImage="https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763222472228_martin_fiz_carrera_linares.jpeg?alt=media&token=978de1cf-a7ce-4050-8ef1-41844dd90b09"
+      parallaxBgImage="https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763198250981_Jesus_Espa_a_carrera_Linares.jpg?alt=media&token=eccc976a-686e-42c8-b0be-8c3d3ab16b23"
     >
       <div className="max-w-2xl mx-auto text-center">
         <AnimateOnScroll animationClass="fade-in-up">
