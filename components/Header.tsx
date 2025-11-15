@@ -84,7 +84,7 @@ const Header: React.FC = () => {
   return (
     <header className="relative bg-gray-100 text-gray-800 py-4 md:py-6 overflow-hidden">
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-75 bg-scroll md:bg-fixed" 
+        className="absolute inset-0 bg-cover bg-center opacity-75 bg-fixed" 
         style={{ 
           backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763198250981_Jesus_Espa_a_carrera_Linares.jpg?alt=media&token=eccc976a-686e-42c8-b0be-8c3d3ab16b23')",
         }}>

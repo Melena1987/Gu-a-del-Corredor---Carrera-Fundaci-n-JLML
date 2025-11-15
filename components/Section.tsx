@@ -20,7 +20,7 @@ const Section: React.FC<SectionProps> = ({ id, title, children, parallaxBgImage 
       {parallaxBgImage && (
         <>
           <div
-            className="absolute inset-0 bg-cover bg-center opacity-75 bg-scroll md:bg-fixed"
+            className="absolute inset-0 bg-cover bg-center opacity-75 bg-fixed"
             style={{
               backgroundImage: `url(${parallaxBgImage})`,
               zIndex: -2,
