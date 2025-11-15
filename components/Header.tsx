@@ -43,11 +43,11 @@ const Header: React.FC = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
           
-          <div className="text-center lg:text-left lg:col-span-2">
+          <div className="flex flex-col items-center lg:col-span-2 text-center">
              <img 
               src="https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763196923876_logo_carrera_400x400.png?alt=media&token=c50ce165-3dfc-475f-a931-57b2e8f5ce7c" 
               alt="Logo Carrera Fundación JLML"
-              className="mx-auto lg:mx-0 h-72 w-72 object-contain"
+              className="mx-auto h-72 w-72 object-contain"
             />
             <h2 className="text-xl md:text-2xl font-semibold tracking-widest text-gray-500 uppercase">
               22 y 23 · Noviembre · 2025
