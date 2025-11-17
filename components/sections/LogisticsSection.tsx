@@ -41,7 +41,7 @@ const LogisticsSection: React.FC = () => {
               </a>
             </p>
             <p className="font-semibold text-gray-900">Horario:</p>
-            <p className="text-gray-600">Domingo 23, de 08:00h a 13:30h.</p>
+            <p className="text-gray-600">Domingo 23, de 10:00h a 12:30h.</p>
             <p className="mt-4 text-sm text-blue-600 font-medium">Recibirás una pulsera/pegatina con tu número de dorsal para identificar tus pertenencias.</p>
           </InfoCard>
         </AnimateOnScroll>

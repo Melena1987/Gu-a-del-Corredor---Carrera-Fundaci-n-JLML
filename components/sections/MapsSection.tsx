@@ -7,6 +7,13 @@ const description5k = 'Salida 11:00h desde el Paseo de Linarejos sentido ascende
 
 const mapData = [
   {
+    title: 'Recorrido Escolar (800m)',
+    description: 'Un circuito para los más pequeños.',
+    detailedDescription: 'Salida desde Paseo de Linarejos a la altura de la entrada a la Estación de Madrid, subida por el carril de sentido descendente hacia la Glorieta de América, cambio de sentido para coger la bajada por el sentido ascendente del Paseo de Linarejos hasta la llegada de Línea de META',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763204960826_escolar.png?alt=media&token=4a2973b4-f835-4f6d-9649-a056bd9df5c2',
+    courseMapUrl: 'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763204960826_escolar.png?alt=media&token=4a2973b4-f835-4f6d-9649-a056bd9df5c2',
+  },
+  {
     title: 'Recorrido Infantil (2.600m)',
     description: 'El circuito para los futuros campeones.',
     detailedDescription: 'Salida desde el Paseo de Linarejos sentido ascendente, Plaza de la Constitución (carril junto a Jardines Santa Margarita), calle Julio Burell, Plaza Colón,calle Viriato, Isaac Peral, 8 puertas, Corredera San Marcos Alta, Plaza de la Constitución (carril junto a Farmacia), subida por el carril del Paseo de Linarejos sentido descendente, Glorieta de América, bajada por el carril del Paseo de Linarejos sentido ascendente, LLEGADA a meta.',
@@ -49,7 +56,7 @@ const MapsSection: React.FC = () => {
               Recorridos
             </h2>
           </AnimateOnScroll>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {mapData.map((map, index) => (
               <AnimateOnScroll key={map.title} animationClass="scale-in" delay={index * 150}>
                 <MapCard 
