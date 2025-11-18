@@ -10,6 +10,7 @@ import CultureSection from './components/sections/CultureSection';
 import SponsorsSection from './components/sections/SponsorsSection';
 import BottomNav from './components/BottomNav';
 import InstallPWA from './components/InstallPWA';
+import PointsOfInterestSection from './components/sections/PointsOfInterestSection';
 
 const App: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const App: React.FC = () => {
         <ScheduleSection />
         <FindBibSection />
         <MapsSection />
+        <PointsOfInterestSection />
         <CultureSection />
         <SponsorsSection />
       </main>
