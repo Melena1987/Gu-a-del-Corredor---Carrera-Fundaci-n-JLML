@@ -78,6 +78,8 @@ const Header: React.FC = () => {
     { href: '#info-esencial', text: 'Info Esencial' },
     { href: '#programa', text: 'Programa' },
     { href: '#recorridos', text: 'Recorridos' },
+    { href: '#puntos-interes', text: 'Puntos Clave' },
+    { href: '#camiseta', text: 'Camiseta' },
     { href: '#turismo', text: 'Turismo' },
   ];
 

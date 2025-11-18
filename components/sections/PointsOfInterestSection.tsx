@@ -36,6 +36,7 @@ const PointsOfInterestSection: React.FC = () => {
         <Section
             id="puntos-interes"
             title="Puntos de Interés"
+            parallaxBgImage="https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763224938691_abel-anton.jpg?alt=media&token=122f9d13-c364-4752-8e52-d3b48e36489d"
         >
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
                 {points.map((point, index) => (
