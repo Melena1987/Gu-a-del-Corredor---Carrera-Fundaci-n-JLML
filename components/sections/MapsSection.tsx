@@ -12,6 +12,7 @@ const mapData = [
     detailedDescription: 'Salida desde Paseo de Linarejos a la altura de la entrada a la Estación de Madrid, subida por el carril de sentido descendente hacia la Glorieta de América, cambio de sentido para coger la bajada por el sentido ascendente del Paseo de Linarejos hasta la llegada de Línea de META',
     imageUrl: 'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763204960826_escolar.png?alt=media&token=4a2973b4-f835-4f6d-9649-a056bd9df5c2',
     courseMapUrl: 'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763204960826_escolar.png?alt=media&token=4a2973b4-f835-4f6d-9649-a056bd9df5c2',
+    googleMapsUrl: 'https://www.google.com/maps/d/edit?mid=1NoNd3v3fSDoV890Pr09Jo9cGs6-yW4A&usp=sharing',
   },
   {
     title: 'Recorrido Infantil (2.600m)',
@@ -19,6 +20,7 @@ const mapData = [
     detailedDescription: 'Salida desde el Paseo de Linarejos sentido ascendente, Plaza de la Constitución (carril junto a Jardines Santa Margarita), calle Julio Burell, Plaza Colón,calle Viriato, Isaac Peral, 8 puertas, Corredera San Marcos Alta, Plaza de la Constitución (carril junto a Farmacia), subida por el carril del Paseo de Linarejos sentido descendente, Glorieta de América, bajada por el carril del Paseo de Linarejos sentido ascendente, LLEGADA a meta.',
     imageUrl: 'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763204960826_infantil.png?alt=media&token=d52a416e-da6f-45eb-a0a2-9c19cc0b731c',
     courseMapUrl: 'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763204960826_infantil.png?alt=media&token=d52a416e-da6f-45eb-a0a2-9c19cc0b731c',
+    googleMapsUrl: 'https://www.google.com/maps/d/edit?mid=1iSHhqT3EGUK99aswW3WYRPSnbh4vkQQ&usp=sharing',
   },
   {
     title: 'Recorrido 5K',
@@ -26,6 +28,7 @@ const mapData = [
     detailedDescription: description5k,
     imageUrl: 'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763204960826_popular.png?alt=media&token=3ae970fc-92e9-4896-90ed-e5adf5ee4412',
     courseMapUrl: 'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763204960826_popular.png?alt=media&token=3ae970fc-92e9-4896-90ed-e5adf5ee4412',
+    googleMapsUrl: 'https://www.google.com/maps/d/edit?mid=1lC5lvjpehsXdI5h2aysZifj_bG50UxU&usp=sharing',
   },
   {
     title: 'Recorrido 10K',
@@ -33,6 +36,7 @@ const mapData = [
     detailedDescription: `(2 Vueltas) ${description5k}`,
     imageUrl: 'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763204960826_popular.png?alt=media&token=3ae970fc-92e9-4896-90ed-e5adf5ee4412',
     courseMapUrl: 'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763204960826_popular.png?alt=media&token=3ae970fc-92e9-4896-90ed-e5adf5ee4412',
+    googleMapsUrl: 'https://www.google.com/maps/d/edit?mid=1RYbbZai_Iz6GOi0ZgLnU70uUo412qpM&usp=sharing',
   },
 ];
 
