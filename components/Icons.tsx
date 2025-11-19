@@ -86,7 +86,12 @@ export const TshirtIcon: React.FC<IconProps> = ({ className = "w-8 h-8" }) => (
 );
 
 export const TrophyIcon: React.FC<IconProps> = ({ className = "w-8 h-8" }) => (
-    <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 18.75h-9a9.75 9.75 0 1011.036-9.022c.18.02.356.04.532.061a9.75 9.75 0 00-2.314-5.017.75.75 0 00-1.06-1.06 9.75 9.75 0 00-9.28 6.084.75.75 0 00.358 1.061 9.75 9.75 0 006.084 9.28.75.75 0 001.06-.358 9.75 9.75 0 005.017-2.314c.022.176.04.352.062.532a9.75 9.75 0 00-9.022-11.036z" />
+    <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M8 21h8" />
+        <path d="M12 17v4" />
+        <path d="M7 4h10" />
+        <path d="M17 4v8a5 5 0 0 1 -10 0V4" />
+        <path d="M3 9a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+        <path d="M17 9a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
     </svg>
 );
