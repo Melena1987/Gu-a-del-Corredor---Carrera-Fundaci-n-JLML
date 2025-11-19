@@ -13,19 +13,25 @@ interface MapCardProps {
 
 const MapCard: React.FC<MapCardProps> = ({ title, description, imageUrl, courseMapUrl, googleMapsUrl, onShowDetails }) => {
   return (
-    <div className="group relative rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 ease-in-out">
-      <div
-        className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
-        style={{ backgroundImage: `url(${imageUrl})` }}
-      ></div>
-      {/* Changed gradient to white to support black text */}
-      <div className="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-transparent"></div>
+    <div className="group flex flex-col bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 ease-in-out h-full">
+      {/* Image Section */}
+      <div className="relative h-60">
+        <img
+          src={imageUrl}
+          alt={`Mapa del ${title}`}
+          className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 p-4">
+          <h3 className="text-xl font-black text-white leading-tight shadow-sm">{title}</h3>
+        </div>
+      </div>
       
-      <div className="relative p-5 flex flex-col justify-end h-[28rem] text-gray-900">
-        <h3 className="text-2xl font-black leading-tight">{title}</h3>
-        <p className="text-sm text-gray-700 font-medium mt-1 mb-auto pt-2">{description}</p>
+      {/* Content Section */}
+      <div className="p-5 flex flex-col flex-grow">
+        <p className="text-sm text-gray-700 font-medium mb-4 flex-grow">{description}</p>
         
-        <div className="flex flex-col gap-3 mt-4">
+        <div className="flex flex-col gap-3 mt-auto">
             <button
                 onClick={onShowDetails}
                 className="w-full inline-flex items-center justify-center px-4 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold rounded-lg transition-colors shadow-md"
