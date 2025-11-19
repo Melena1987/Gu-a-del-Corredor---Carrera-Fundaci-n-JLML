@@ -16,30 +16,23 @@ const estacionMadridUrl = "https://www.google.es/maps/place/Estaci%C3%B3n+del+Pa
 // Define the events in chronological order
 const countdownEvents: CountdownEvent[] = [
   {
-    date: "2025-11-22T17:00:00",
+    date: "2025-11-22T10:00:00",
     title: "Recogida de dorsales",
-    description: "Inicio del periodo de recogida",
-    location: "Salida/Meta (Estación de Madrid)",
+    description: "Sáb: 10-14h y 16-20:30h",
+    location: "Estación de Madrid",
     locationUrl: estacionMadridUrl,
   },
   {
-    date: "2025-11-22T18:00:00",
+    date: "2025-11-22T17:00:00",
     title: "Charla con las Leyendas",
     description: "Con Fermín Cacho, Martín Fiz y más",
-    location: "Salida/Meta (Estación de Madrid)",
+    location: "Centro de Interpretación de la Minería",
     locationUrl: estacionMadridUrl,
   },
   {
     date: "2025-11-23T10:00:00",
     title: "Salida Carreras Menores",
     description: "Categorías Escolar e Infantil",
-    location: "Salida/Meta (Estación de Madrid)",
-    locationUrl: estacionMadridUrl,
-  },
-  {
-    date: "2025-11-23T10:15:00",
-    title: "Fin de recogida de dorsales",
-    description: "Última oportunidad",
     location: "Salida/Meta (Estación de Madrid)",
     locationUrl: estacionMadridUrl,
   },
@@ -51,7 +44,7 @@ const countdownEvents: CountdownEvent[] = [
     locationUrl: estacionMadridUrl,
   },
   {
-    date: "2025-11-23T12:00:00",
+    date: "2025-11-23T12:30:00",
     title: "Entrega de premios",
     description: "Categoría Popular",
     location: "Salida/Meta (Estación de Madrid)",

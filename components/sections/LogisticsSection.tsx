@@ -17,13 +17,13 @@ const LogisticsSection: React.FC = () => {
             <p className="font-semibold text-gray-900">Ubicación:</p>
             <p className="mb-4">
               <a href="https://www.google.es/maps/place/Estaci%C3%B3n+del+Paseo+%22Madrid%22/@38.1012826,-3.6338789,685m/data=!3m1!1e3!4m6!3m5!1s0xd6e9be8febe9bbd:0x5097390e14113321!8m2!3d38.1004552!4d-3.6313147!16s%2Fg%2F11krgwt985?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
-                Salida/Meta (Estación de Madrid)
+                Estación de Madrid
               </a>
             </p>
             <p className="font-semibold text-gray-900">Horarios:</p>
             <ul className="list-disc list-inside text-gray-600">
-              <li>Sábado 22: 17:00h a 20:00h</li>
-              <li>Domingo 23: 08:00h a 10:15h</li>
+              <li>Sábado 22: 10:00h a 14:00h y 16:00h a 20:30h</li>
+              <li>Domingo 23: 08:00h a 14:00h</li>
             </ul>
             <a href="#dorsal" className="mt-4 block text-center bg-blue-100 text-blue-800 font-semibold py-2 px-4 rounded-lg hover:bg-blue-200 transition-colors duration-300">
               ¿Sabes ya cuál es tu número? ¡Encuéntralo aquí!
