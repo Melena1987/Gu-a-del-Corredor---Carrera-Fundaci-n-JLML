@@ -16,9 +16,9 @@ const estacionMadridUrl = "https://www.google.es/maps/place/Estaci%C3%B3n+del+Pa
 // Define the events in chronological order
 const countdownEvents: CountdownEvent[] = [
   {
-    date: "2025-11-22T10:00:00",
+    date: "2025-11-22T17:00:00",
     title: "Recogida de dorsales",
-    description: "Sáb: 10-14h y 16-20:30h",
+    description: "Sáb: 17:00h a 20:00h",
     location: "Estación de Madrid",
     locationUrl: estacionMadridUrl,
   },
