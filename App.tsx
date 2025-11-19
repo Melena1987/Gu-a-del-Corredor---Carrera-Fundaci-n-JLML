@@ -12,6 +12,7 @@ import BottomNav from './components/BottomNav';
 import InstallPWA from './components/InstallPWA';
 import PointsOfInterestSection from './components/sections/PointsOfInterestSection';
 import TshirtSection from './components/sections/TshirtSection';
+import TrophySection from './components/sections/TrophySection';
 
 const App: React.FC = () => {
   return (
@@ -25,6 +26,7 @@ const App: React.FC = () => {
         <MapsSection />
         <PointsOfInterestSection />
         <TshirtSection />
+        <TrophySection />
         <CultureSection />
         <SponsorsSection />
       </main>
