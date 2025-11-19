@@ -2,20 +2,7 @@ import React, { useState, useMemo } from 'react';
 import Section from '../Section';
 import { SearchIcon } from '../Icons';
 import AnimateOnScroll from '../AnimateOnScroll';
-
-// Dummy data until the real list is provided
-const runners = [
-  { bib: 1, name: 'Fermín Cacho Ruiz' },
-  { bib: 2, name: 'Martín Fiz' },
-  { bib: 3, name: 'Abel Antón Rodrigo' },
-  { bib: 4, name: 'Reyes Estévez' },
-  { bib: 5, name: 'Jesús España' },
-  { bib: 101, name: 'María García Pérez' },
-  { bib: 102, name: 'Juan Rodríguez López' },
-  { bib: 103, name: 'Ana Martínez Sánchez' },
-  { bib: 104, name: 'David Fernández González' },
-  { bib: 105, name: 'Laura Gómez Ruiz' },
-];
+import { runners } from '../data/runners';
 
 const FindBibSection: React.FC = () => {
   const [query, setQuery] = useState('');
@@ -60,7 +47,7 @@ const FindBibSection: React.FC = () => {
 
         <div className="mt-8 text-left">
           {query.trim().length >= 3 && filteredRunners.length > 0 && (
-            <div className="space-y-4">
+            <div className="space-y-4 max-h-96 overflow-y-auto pr-2">
               {filteredRunners.map((runner) => (
                 <div key={runner.bib} className="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-md flex justify-between items-center border-l-4 border-blue-500">
                   <p className="text-lg font-medium text-gray-800">{runner.name}</p>
