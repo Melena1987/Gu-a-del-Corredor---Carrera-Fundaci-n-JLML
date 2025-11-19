@@ -16,8 +16,8 @@ const LogisticsSection: React.FC = () => {
           <InfoCard icon={<IdentificationIcon />} title="Recogida de Dorsales">
             <p className="font-semibold text-gray-900">Ubicación:</p>
             <p className="mb-4">
-              <a href="https://www.google.es/maps/place/Pistas+Azules/@38.0963615,-3.6294718,685m/data=!3m1!1e3!4m14!1m7!3m6!1s0xd6e9b2c06d2b52b:0x5c22e6ee4d94e74b!2sPolideportivo+San+Jos%C3%A9++Centro+de+Recepci%C3%B3n+de+Deportistas!8m2!3d38.0973062!4d-3.6274671!16s%2Fg%2F11ckwc4bdm!3m5!1s0xd6e9b08b04576ad:0xb2cf4281d9fa8db1!8m2!3d38.0965447!4d-3.6272797!16s%2Fg%2F11sgdf7lyt?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
-                Pistas de San José
+              <a href="https://www.google.es/maps/place/Estaci%C3%B3n+del+Paseo+%22Madrid%22/@38.1012826,-3.6338789,685m/data=!3m1!1e3!4m6!3m5!1s0xd6e9be8febe9bbd:0x5097390e14113321!8m2!3d38.1004552!4d-3.6313147!16s%2Fg%2F11krgwt985?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
+                Salida/Meta (Estación de Madrid)
               </a>
             </p>
             <p className="font-semibold text-gray-900">Horarios:</p>

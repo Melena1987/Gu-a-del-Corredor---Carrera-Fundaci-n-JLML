@@ -20,7 +20,7 @@ const museums = [
     {
         title: 'Centro de Interpretación del Paisaje Minero',
         description: 'Ubicado en el antiguo muelle de Carga de la Estación de Madrid, cuenta la historia de la minería con utensilios de la época y muestras de minerales.',
-        location: 'Paseo de Linarejos, s/n',
+        location: 'Salida/Meta (Estación de Madrid)',
         hours: '10-13:30h',
     },
     {
