@@ -2,6 +2,7 @@ import React from 'react';
 import Section from '../Section';
 import MuseumCard from '../MuseumCard';
 import AnimateOnScroll from '../AnimateOnScroll';
+import { BuildingLibraryIcon } from '../Icons';
 
 const museums = [
     {
@@ -81,9 +82,10 @@ const CultureSection: React.FC = () => {
                 href="https://www.turismolinares.es/museos-y-centros-de-interpretacion/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="text-blue-600 font-bold hover:underline"
+                className="inline-flex items-center gap-2 bg-blue-600 text-white font-bold px-6 py-3 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105"
             >
-                Más info en Turismo Linares.
+                <BuildingLibraryIcon className="w-5 h-5" />
+                <span>Más info en Turismo Linares</span>
             </a>
         </div>
     </Section>
