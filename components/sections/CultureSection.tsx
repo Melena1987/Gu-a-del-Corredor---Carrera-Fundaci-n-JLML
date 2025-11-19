@@ -52,7 +52,7 @@ const CultureSection: React.FC = () => {
     <Section 
       id="turismo"
       title="Turismo por Linares"
-      parallaxBgImage="https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763198129907_linares_carrera_fundaci_n_JLML.jpg?alt=media&token=b3f1d9od5-be17-4054-a754-f399636d5384"
+      parallaxBgImage="https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763543830754_WhatsApp_Image_2025-11-19_at_09.57.44__1_.jpeg?alt=media&token=26593499-c842-442e-9082-97f0938d1843"
     >
         <AnimateOnScroll animationClass="fade-in-up">
             <div className="text-center mb-12">
