@@ -23,7 +23,7 @@ const LogisticsSection: React.FC = () => {
             <p className="font-semibold text-gray-900">Horarios:</p>
             <ul className="list-disc list-inside text-gray-600">
               <li>Sábado 22: 17:00h a 20:00h</li>
-              <li>Domingo 23: 08:00h a 14:00h</li>
+              <li>Domingo 23: 08:00h a 10:15h</li>
             </ul>
             <a href="#dorsal" className="mt-4 block text-center bg-blue-100 text-blue-800 font-semibold py-2 px-4 rounded-lg hover:bg-blue-200 transition-colors duration-300">
               ¿Sabes ya cuál es tu número? ¡Encuéntralo aquí!
