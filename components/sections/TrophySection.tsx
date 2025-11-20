@@ -11,7 +11,7 @@ const TrophySection: React.FC = () => {
         <h2>Un Galardón Único</h2>
       </div>
       <p className="mt-4 text-lg text-gray-600">
-        Este trofeo, diseñado en exclusiva para la I Carrera Fundación JLML, simboliza el esfuerzo y la pasión por el atletismo. Una pieza que fusiona la tradición minera de Linares con la modernidad del deporte.
+        Este trofeo, diseñado en exclusiva para la I Carrera Fundación JLML, simboliza el esfuerzo y la pasión por el atletismo.
       </p>
       <p className="mt-4 text-gray-600">
         ¡Un recuerdo para toda la vida para los campeones de cada categoría!
