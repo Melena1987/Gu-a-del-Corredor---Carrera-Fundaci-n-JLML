@@ -36,7 +36,7 @@ const mapData = [
     detailedDescription: `(2 Vueltas) ${description5k}`,
     imageUrl: 'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763204960826_popular.png?alt=media&token=3ae970fc-92e9-4896-90ed-e5adf5ee4412',
     courseMapUrl: 'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1763204960826_popular.png?alt=media&token=3ae970fc-92e9-4896-90ed-e5adf5ee4412',
-    googleMapsUrl: 'https://www.google.com/maps/d/edit?mid=1RYbbZai_Iz6GOi0ZgLnU70uUo412qpM&usp=sharing',
+    googleMapsUrl: 'https://www.google.com/maps/d/viewer?mid=1RYbbZai_Iz6GOi0ZgLnU70uUo412qpM&ll=38.09478159536572%2C-3.631409573263551&z=16',
   },
 ];
 
