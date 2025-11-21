@@ -7,13 +7,14 @@ interface SectionProps {
   title: string;
   children: React.ReactNode;
   parallaxBgImage?: string;
+  isWhiteBackground?: boolean;
 }
 
-const Section: React.FC<SectionProps> = ({ id, title, children, parallaxBgImage }) => {
+const Section: React.FC<SectionProps> = ({ id, title, children, parallaxBgImage, isWhiteBackground }) => {
   // Use more padding for sections with a background to make them stand out.
   // This also creates visual separation between sections.
   const sectionPadding = parallaxBgImage ? "py-20 md:py-24" : "py-12 md:py-20";
-  const sectionBgClass = parallaxBgImage ? "" : "bg-gray-50";
+  const sectionBgClass = parallaxBgImage ? "" : (isWhiteBackground ? "bg-white" : "bg-gray-50");
 
   return (
     <section id={id} className={`relative overflow-hidden ${sectionPadding} ${sectionBgClass}`}>

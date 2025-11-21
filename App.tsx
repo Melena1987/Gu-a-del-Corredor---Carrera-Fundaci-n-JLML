@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -5,6 +6,7 @@ import WelcomeSection from './components/sections/WelcomeSection';
 import LogisticsSection from './components/sections/LogisticsSection';
 import ScheduleSection from './components/sections/ScheduleSection';
 import FindBibSection from './components/sections/FindBibSection';
+import VolunteersSection from './components/sections/VolunteersSection';
 import MapsSection from './components/sections/MapsSection';
 import CultureSection from './components/sections/CultureSection';
 import SponsorsSection from './components/sections/SponsorsSection';
@@ -23,6 +25,7 @@ const App: React.FC = () => {
         <LogisticsSection />
         <ScheduleSection />
         <FindBibSection />
+        <VolunteersSection />
         <MapsSection />
         <PointsOfInterestSection />
         <TshirtSection />
