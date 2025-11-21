@@ -11,7 +11,7 @@ const ScheduleSection: React.FC = () => {
   const saturdayEvents: TimelineEvent[] = [
     { time: '17:00h a 20:00h', title: 'Recogida de dorsales', location: 'Estación de Madrid', locationUrl: paseoUrl },
     { time: '17:00h a 19:30h', title: 'Charla con las Leyendas', description: 'Fermín Cacho, Martín Fiz, Abel Antón, Reyes Estévez y Jesús España.', location: 'Centro de Interpretación de la Minería', locationUrl: paseoUrl },
-    { time: '20:30h', title: 'Fin de las actividades del sábado' },
+    { time: '20:00h', title: 'Fin de las actividades del sábado' },
   ];
 
   const sundayEvents: TimelineEvent[] = [
