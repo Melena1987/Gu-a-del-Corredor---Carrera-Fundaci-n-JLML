@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Section from '../Section';
 import Timeline from '../Timeline';
@@ -16,9 +17,9 @@ const ScheduleSection: React.FC = () => {
 
   const sundayEvents: TimelineEvent[] = [
     { time: '08:00h a 10:15h', title: 'Última recogida de dorsales', location: 'Salida/Meta (Estación de Madrid)', locationUrl: paseoUrl },
-    { time: '10:00h', title: 'Salida Carrera Escolar', description: '800 metros, 5-10 años', location: 'Salida/Meta (Estación de Madrid)', locationUrl: paseoUrl },
+    { time: '10:00h', title: 'Salida Carrera Escolar', description: '800 metros, 5-10 años (No competitiva)', location: 'Salida/Meta (Estación de Madrid)', locationUrl: paseoUrl },
     { time: '10:15h', title: 'Salida Carrera Infantil', description: '2.600 metros, 10-16 años', location: 'Salida/Meta (Estación de Madrid)', locationUrl: paseoUrl },
-    { time: '10:45h', title: 'Entrega de premios', description: 'Categorías Escolar e Infantil', location: 'Salida/Meta (Estación de Madrid)', locationUrl: paseoUrl },
+    { time: '10:45h', title: 'Entrega de premios', description: 'Categoría Infantil', location: 'Salida/Meta (Estación de Madrid)', locationUrl: paseoUrl },
     { time: '11:00h', title: 'Salida Carrera Popular', description: 'Modalidades 5k y 10k', location: 'Salida/Meta (Estación de Madrid)', locationUrl: paseoUrl },
     { time: '12:30h', title: 'Entrega de premios', description: 'Categoría Popular', location: 'Salida/Meta (Estación de Madrid)', locationUrl: paseoUrl },
   ];
