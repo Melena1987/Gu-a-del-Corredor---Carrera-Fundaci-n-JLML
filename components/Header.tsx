@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import Countdown from './Countdown';
 import { LocationMarkerIcon } from './Icons';
@@ -172,8 +173,8 @@ const Header: React.FC = () => {
             ) : (
               <p className="text-center text-xl font-bold text-blue-600">¡Gracias por participar!</p>
             )}
-            <a href="#dorsal" className="mt-6 block w-full text-center bg-blue-600 text-white font-bold text-lg px-8 py-3 rounded-full shadow-lg hover:bg-blue-700 transition-transform transform hover:scale-105">
-              Encuentra tu Dorsal
+            <a href="#programa" className="mt-6 block w-full text-center bg-blue-600 text-white font-bold text-lg px-8 py-3 rounded-full shadow-lg hover:bg-blue-700 transition-transform transform hover:scale-105">
+              Ver Programa
             </a>
           </div>
 

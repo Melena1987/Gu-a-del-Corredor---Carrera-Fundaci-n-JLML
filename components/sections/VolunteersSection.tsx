@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Section from '../Section';
-import { HeartIcon, LocationMarkerIcon, ClockIcon } from '../Icons';
+import { HeartIcon, LocationMarkerIcon } from '../Icons';
 import AnimateOnScroll from '../AnimateOnScroll';
 
 const VolunteersSection: React.FC = () => {
@@ -29,14 +29,10 @@ const VolunteersSection: React.FC = () => {
 
           <AnimateOnScroll animationClass="fade-in-up" delay={200}>
               <div className="bg-gray-50 rounded-xl p-6 md:p-8 shadow-sm border border-gray-100 inline-block w-full max-w-xl">
-                  <p className="text-lg text-gray-800 font-semibold mb-6">
-                      Pues nos vemos el próximo:
+                  <p className="text-lg text-gray-800 font-bold mb-6">
+                      ¡Ven ya a la Estación de Madrid!
                   </p>
                   <div className="flex flex-col gap-6 items-center">
-                      <div className="flex items-center gap-3 text-gray-700 text-lg">
-                          <ClockIcon className="w-8 h-8 text-blue-500" />
-                          <span>Sábado 22 a las <span className="font-bold text-gray-900 text-xl">17:00h</span></span>
-                      </div>
                       <a 
                           href={mapUrl}
                           target="_blank" 
@@ -44,7 +40,7 @@ const VolunteersSection: React.FC = () => {
                           className="group flex items-center gap-2 bg-white text-red-600 hover:text-red-700 transition-all duration-300 text-lg font-bold px-6 py-3 rounded-full shadow-md border border-gray-200 hover:shadow-lg hover:scale-105"
                       >
                           <LocationMarkerIcon className="w-6 h-6 group-hover:animate-bounce" />
-                          <span>Estación de Madrid</span>
+                          <span>Ver ubicación</span>
                       </a>
                   </div>
               </div>
