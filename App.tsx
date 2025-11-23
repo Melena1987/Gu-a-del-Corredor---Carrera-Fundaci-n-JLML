@@ -3,6 +3,7 @@ import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import WelcomeSection from './components/sections/WelcomeSection';
+import RaceVideoSection from './components/sections/RaceVideoSection';
 import LogisticsSection from './components/sections/LogisticsSection';
 import ScheduleSection from './components/sections/ScheduleSection';
 import FindBibSection from './components/sections/FindBibSection';
@@ -22,6 +23,7 @@ const App: React.FC = () => {
       <Header />
       <main>
         <WelcomeSection />
+        <RaceVideoSection />
         <LogisticsSection />
         <ScheduleSection />
         <FindBibSection />
