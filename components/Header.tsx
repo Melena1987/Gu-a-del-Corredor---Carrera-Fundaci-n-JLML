@@ -53,6 +53,12 @@ const countdownEvents: CountdownEvent[] = [
   },
 ];
 
+const classificationLinks = [
+  { name: 'Clasificación 5K', url: 'https://gesconchip.es/app/clasificaciones/carrera-fundacion-jose-luis-martin-lopez/5-k-11/general' },
+  { name: 'Clasificación 10K', url: 'https://gesconchip.es/app/clasificaciones/carrera-fundacion-jose-luis-martin-lopez/10-k-10/general' },
+  { name: 'Clasificación Infantil', url: 'https://gesconchip.es/app/clasificaciones/carrera-fundacion-jose-luis-martin-lopez/2-600-m-carrera-infantil/general' },
+];
+
 
 const Header: React.FC = () => {
   const [nextEvent, setNextEvent] = useState<CountdownEvent | null>(null);
@@ -173,9 +179,27 @@ const Header: React.FC = () => {
             ) : (
               <p className="text-center text-xl font-bold text-blue-600">¡Gracias por participar!</p>
             )}
-            <a href="#programa" className="mt-6 block w-full text-center bg-blue-600 text-white font-bold text-lg px-8 py-3 rounded-full shadow-lg hover:bg-blue-700 transition-transform transform hover:scale-105">
-              Ver Programa
-            </a>
+            
+            <div className="mt-6 block w-full text-center bg-gray-800 text-white font-bold text-lg px-8 py-3 rounded-full shadow-lg">
+              MUY PRONTO LA GALERÍA OFICIAL
+            </div>
+
+            {/* Classification Buttons */}
+            <div className="mt-4 w-full space-y-2">
+                <p className="text-center text-xs font-bold text-gray-600 uppercase tracking-widest mb-1">Clasificaciones</p>
+                {classificationLinks.map((link) => (
+                    <a 
+                        key={link.name}
+                        href={link.url}
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="block w-full text-center bg-white/80 hover:bg-white text-gray-800 font-semibold text-sm px-4 py-2 rounded-lg shadow-sm border border-gray-200 transition-all hover:text-blue-600 hover:border-blue-300"
+                    >
+                        {link.name}
+                    </a>
+                ))}
+            </div>
+
           </div>
 
         </div>
