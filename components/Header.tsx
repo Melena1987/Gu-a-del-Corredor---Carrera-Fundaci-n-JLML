@@ -180,9 +180,14 @@ const Header: React.FC = () => {
               <p className="text-center text-xl font-bold text-blue-600">¡Gracias por participar!</p>
             )}
             
-            <div className="mt-6 block w-full text-center bg-gray-800 text-white font-bold text-lg px-8 py-3 rounded-full shadow-lg">
-              MUY PRONTO LA GALERÍA OFICIAL
-            </div>
+            <a 
+              href="https://www.carreralinares.es/galeria-oficial" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 block w-full text-center bg-gray-800 hover:bg-gray-900 text-white font-bold text-lg px-8 py-3 rounded-full shadow-lg transition-colors duration-300"
+            >
+              VER GALERÍA OFICIAL
+            </a>
 
             {/* Classification Buttons */}
             <div className="mt-4 w-full space-y-2">
